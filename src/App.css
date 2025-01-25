@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+body{
+margin: 0;
+padding: 0;
+background-color: rgb(57, 56, 56);
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Header {
+display: flex;
+justify-content: center;
+align-items: center;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 30px;
+color:rgb(27, 223, 223);
+margin-top: 20px;
+
+}
+.for{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color:rgb(238, 242, 242); 
+    margin-left: 15px;
+}
+.input{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 15px;
+    border: 2px solid  cyan ;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+}
+.city-search{
+    flex: 1;
+    border: 0;
+    outline: none;
+    background: transparent;
+    padding: 20px;
+    font-weight: 600;
+    color:white;
+}
+.search-icon img{
+    margin: 10px;
+    padding: 5px;
+   object-fit: contain;
+   height: 30px;
+   cursor: pointer;
+}
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather img{
+    height: 200px;
+    margin: 10px;
+}
+
+.humudity img{
+    height: 100px;
+}
+.wind img{
+    height: 100px;
+}
+.wind {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.wind h3{
+    color: aqua;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.humudity{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+   
+} 
+.humudity h3{
+    color: aqua;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 250px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 30px;
+}
+.base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 20px;
+}
+
+.weather-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.temp,
+.location,
+.country{
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+    margin: 10px;
+    gap: 30px;
+    color: aqua;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.location{
+    color: azure;
+    font-size: 35px;
+    margin: 5px;
+}
+.details{
+    height: 100px;
+    width: 50%;
+    background-color: rgb(66, 63, 63);
+    border-radius: 40px;
+    padding: 30px;
+
+}
+.cord{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(8, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cord div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cord div span{
+font-size: 15px;
+
+}
+.cord div span:nth-child(2){
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  padding-top: 6px;
+    
+    }
+.loading-message,
+.citynot {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(111, 112, 113);
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width:480px) {
+    .loading-message,
+    .citynot{
+        font-size: 20px;
+        color: rgb(143, 141, 141);
+    }
+}
+  
+@media (max-width: 480px) {
+    .Header {
+        font-size: 1.5rem;
+    }
+
+    .for {
+        font-size: 1.2rem;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    .weather img {
+        height: 100px;
+    }
+
+    .hummudity {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .location {
+        font-size: 1.5rem;
+    }
+
+    .temp,
+    .country {
+        font-size: 1rem;
+        gap: 10px;
+    }
+
+    .details {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .cord {
+        gap: 20px;
+    }
+
+    .cord div {
+        padding: 10px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .Header {
+        font-size: 2rem;
+    }
+
+    .for {
+        font-size: 1.3rem;
+    }
+
+    .input {
+        width: 85%;
+    }
+
+    .hummudity {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .location {
+        font-size: 1.8rem;
+    }
+
+    .temp,
+    .country {
+        font-size: 1.1rem;
+    }
+
+    .details {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .cord {
+        gap: 30px;
+    }
+
+    .cord div {
+        padding: 15px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .input {
+        width: 70%;
+    }
+
+    .hummudity {
+        width: 80%;
+    }
+
+    .location {
+        font-size: 2rem;
+    }
+
+    .temp,
+    .country {
+        font-size: 1.2rem;
+    }
+
+    .details {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        width: 90%; 
+        height: auto; 
+        padding: 20px; 
+        margin: 20px auto; 
+        border-radius: 20px;
+    }
+
+    .humudity, .wind {
+        font-size: 18px;
+        margin: 15px 0; 
+        text-align: center; 
+    }
+
+    .humudity img, .wind img {
+        height: 80px; 
+    }
+
+    .base {
+        flex-direction: column; 
+        margin: 15px 0; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+        width: 95%; 
+        margin: 15px auto;
+        border-radius:20px; 
+    }
+
+    .humudity, .wind {
+        font-size: 16px; 
+        margin: 10px 0; 
+    }
+
+    .humudity img, .wind img {
+        height: 60px; 
+    }
+
+    .base {
+       
+        margin-right: 25px;
+        margin-left: 15px; 
+    }
+}
